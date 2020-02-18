@@ -6,4 +6,9 @@ describe ('Test Suite 1', function()
         cy.title().should('eq', 'Staysure™ Travel Insurance - It\'s Worth Doing Right')
     })
 
+    it('Click Get Quote', function()
+    {
+        cy.get('.btn-get-quote').click()
+    })
+
 })
