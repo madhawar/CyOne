@@ -1,14 +1,17 @@
-describe ('Test Suite 1', function()
+describe ('TStaysure Webe', function()
 {
-    it('Test Case 1', function()
+    it('Goto URL', function()
     {
-        cy.visit('https://www.staysure.co.uk/')
-        cy.title().should('eq', 'Staysure™ Travel Insurance - It\'s Worth Doing Right')
+        cy.visit('https://travelinsurance.staysure.co.uk/quote/policy-details')
+        cy.title().should('eq', 'Travel Insurance Quote |Over 50s holiday insurance |Staysure')
     })
 
-    it('Click Get Quote', function()
+    it('cover_type_single', function()
     {
-        cy.get('.btn-get-quote').click()
+        cy.get('#fld-cover-singletrip').click()
     })
+
+
+    
 
 })
